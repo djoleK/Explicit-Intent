@@ -29,6 +29,8 @@ public class Activity3 extends AppCompatActivity {
     public void clickSubmit(View view) {
         if (etSurname.getText().toString().isEmpty()) {
             Toast.makeText(Activity3.this, "Please enter your surname!", Toast.LENGTH_SHORT);
+
+        }else{
             String surname = etSurname.getText().toString().trim();
             Intent data = new Intent();
             data.putExtra("surname", surname);
