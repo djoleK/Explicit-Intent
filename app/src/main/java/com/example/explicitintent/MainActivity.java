@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void clickAct2(View view) {
 
         if (etName.getText().toString().isEmpty()) {
-            Toast.makeText(MainActivity.this, "Please enter your name", Toast.LENGTH_SHORT);
+            Toast.makeText(MainActivity.this, "Please enter your name", Toast.LENGTH_SHORT).show();
         } else {
             String name = etName.getText().toString().trim();
             Intent intent = new Intent(MainActivity.this, com.example.explicitintent.Activity2.class);
